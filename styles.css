@@ -1,8 +1,15 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Helvetica', serif;
+}
+
 body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
   height: 100vh;
+  width: 100vw;
+  min-height: 600px;
   padding: 0;
   margin: 0;
 }
@@ -15,11 +22,11 @@ body {
   align-items: center;
   padding: 25px;
   gap: 50px;
+  overflow: auto;
 }
 
 .sidebar > * {
   color: #ffffff;
-  font-family: 'Roboto', 'Helvetica', serif;
   font-weight: 500;
   width: 100%;
   font-size: 24px;
@@ -34,6 +41,103 @@ body {
 .sidebar li {
   margin: 14px 0;
 }
+
 .main-content {
   background-color: #e2e8f0;
+}
+
+.profile-picture {
+  border-radius: 50%;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.header > div {
+  display: grid;
+}
+
+.header-top {
+  grid-template-columns: 65% 25%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  gap: 8%;
+}
+
+.header-top > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-top-search {
+  gap: 8px !important;
+}
+
+.header-top-search-bar {
+  appearance: none;
+  height: 3em;
+  border-radius: 20px;
+  background-color: #e2e8f0;
+  border: none;
+  flex: 1;
+  padding: 8px;
+}
+
+.header-top-profile {
+  height: 3em;
+}
+
+.header-bottom {
+  padding: 10px 20px 15px 40px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.header-bottom-greeting-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.header-bottom-greeting-top {
+  font-size: 12px;
+}
+
+.header-bottom-greeting-bottom {
+  font-size: 24px;
+}
+
+.header-bottom-buttons {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-bottom-button {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  background-color: #1992d3;
+}
+
+.header-bottom-greeting {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-bottom-greeting-profile {
+  height: 4em;
+}
+
+.header-icon {
+  height: 1.6em;
 }
