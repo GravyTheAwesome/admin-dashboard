@@ -154,13 +154,12 @@ body {
   grid-template-columns: 66% 31%;
   grid-template-rows: 55% 42%;
   gap: 3%;
-  padding: 10px;
-  padding-bottom: 100px;
+  padding: 30px;
+  padding-bottom: 75px;
 }
 
 .main-content-projects {
   grid-row: 1 / -1;
-  padding: 20px;
 }
 
 .main-content-project-container {
@@ -194,18 +193,16 @@ body {
   padding: 0;
   position: relative;
   bottom: 8px;
-  font-size: 24px;
   margin-bottom: 2px;
-  font-size: 1.3em;
 }
 
 .main-content-announcements {
-  background-color: aquamarine;
   grid-column: 2;
+  position: relative;
+  bottom: 10px;
 }
 
 .main-content-trending {
-  background-color: orange;
   grid-row: 2;
 }
 
@@ -219,12 +216,17 @@ body {
   gap: 4px;
 }
 
-.main-content-project-title {
+.title {
   font-weight: 500;
+  font-size: 22px;
+}
+
+.para {
+  font-weight: 300;
+  color: #636363;
 }
 
 .main-content-project-para {
-  font-weight: 250;
   font-size: 0.8em;
 }
 
@@ -232,7 +234,37 @@ body {
   justify-self: end;
   position: relative;
   display: flex;
-  gap: 8px;
+  gap: 16px;
   margin-right: 16px;
   align-self: end;
+}
+
+.main-content-announcements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 10%;
+  border-radius: 8px;
+  height: 100%;
+  justify-content: center;
+}
+
+.main-content-announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main-content-announcement-title {
+  font-size: 0.95em;
+  margin-bottom: 4px;
+}
+
+.main-content-announcement-para {
+  font-size: 0.75em;
+}
+
+hr {
+  max-height: 2px;
 }
