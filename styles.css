@@ -44,10 +44,6 @@ body {
   margin: 14px 0;
 }
 
-.main-content {
-  background-color: #e2e8f0;
-}
-
 .profile-picture {
   border-radius: 50%;
 }
@@ -149,13 +145,25 @@ body {
   height: 1.6em;
 }
 
+.sidebar-img {
+  filter: invert(100%) sepia(0%) saturate(348%) hue-rotate(267deg)
+    brightness(114%) contrast(101%);
+  display: inline;
+  width: 1em;
+}
+
+.sidebar > h2 > img {
+  width: 1.8em;
+}
+
 .main-content {
   display: grid;
   grid-template-columns: 66% 31%;
-  grid-template-rows: 55% 42%;
+  grid-template-rows: 60% 47%;
   gap: 3%;
   padding: 30px;
-  padding-bottom: 75px;
+  padding-bottom: 150px;
+  background-color: #e2e8f0;
 }
 
 .main-content-projects {
@@ -167,11 +175,11 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  height: 100%;
+  height: auto;
 }
 
 .main-content-project {
-  padding: 30px 15px;
+  padding: 25px 10px;
   display: grid;
   grid-template-rows: 60% 25%;
   gap: 20%;
@@ -199,7 +207,7 @@ body {
 .main-content-announcements {
   grid-column: 2;
   position: relative;
-  bottom: 10px;
+  bottom: 9.5px;
 }
 
 .main-content-trending {
@@ -244,27 +252,75 @@ body {
   flex-direction: column;
   gap: 20px;
   background-color: #ffffff;
-  padding: 10%;
+  padding: 7%;
   border-radius: 8px;
-  height: 100%;
-  justify-content: center;
+  flex: 1;
+  justify-content: space-between;
 }
 
 .main-content-announcements {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  height: 100%;
 }
 
 .main-content-announcement-title {
-  font-size: 0.95em;
+  font-size: 0.9em;
   margin-bottom: 4px;
 }
 
 .main-content-announcement-para {
-  font-size: 0.75em;
+  font-size: 0.7em;
 }
 
 hr {
   max-height: 2px;
+}
+
+.main-content-trending-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.main-content-trending {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main-content-trending-user-profile {
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+}
+
+.main-content-trending-user {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.main-content-trending-user-handle {
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-bottom: 1px;
+}
+
+.main-content-trending-user-job {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #636363;
+}
+
+.sidebar > ul > li,
+.sidebar-heading {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
