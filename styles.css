@@ -321,6 +321,11 @@ hr {
 .sidebar > ul > li,
 .sidebar-heading {
   display: flex;
-  gap: 8px;
+  gap: 12px;
   align-items: center;
+}
+
+.sidebar > ul > li {
+  gap: 24px;
+  font-size: 1em;
 }
